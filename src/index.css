@@ -1,0 +1,144 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+label{
+  font-size: 20px;
+}
+html,
+body{
+   height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.container{
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 8px 8px 24px rgba(20, 181, 135, 0.625);
+
+}
+.container > h1{
+  margin-bottom:  20px;
+}
+.container >form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container >div{
+  display: flexbox;
+  flex-direction: column;
+}
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+button{
+  background-color: #770e6b;
+  border: none;
+  font-size: 20px;
+  color: #a4cf16;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+  
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main-content {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Style pour la navbar fixe */
+.fixed-navbar {
+  position: flex;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Style pour le conteneur des pages */
+.page-container {
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style pour le bouton panier */
+.cart-button {
+  margin-left: auto; /* Pousse le bouton à droite */
+}
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1030; /* Bootstrap utilise 1030 par défaut */
+}
+/* Pour une navbar ultra compacte */
+.navbar {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+/* Liens plus denses */
+.nav-link {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+/* Correction des marges */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Alignement des produits */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;}
